@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Groceries</title>
+    <link rel="stylesheet" href="style.css">
+    <div id="toast"></div>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">🛒 MiniMart</div>
+    <a href="cart.html" class="cart">🛍 Cart</a>
+</header>
+<div style="padding: 10px 20px;">
+  <button onclick="goBack()" class="back-btn">← Back</button>
+</div>
+
+<h1 style="text-align:center;">🛍 Groceries</h1>
+
+<div class="product-grid">
+
+    <div class="product-card">
+        <img src="binhnguyen269-food-5072245_1920.jpg">
+        <h3 class="product-name">fresh juice</h3>
+        <p>300 PKR</p>
+        <button onclick="addToCart('fresh juice', 300)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="Flavour Dishes.jpg">
+        <h3 class="product-name">milky Bread</h3>
+        <p>900 PKR</p>
+        <button onclick="addToCart('milky Bread', 900)">Add to Cart</button>
+    </div>
+
+    <!-- Apples -->
+    <div class="product-card">
+      <a href="product.html#apples">
+        <img src="fresh-apple-wooden-box-black-fresh-fruit.jpg" alt="Apples">
+      </a>
+      <h3 class="product-name">Fresh Apples</h3>
+      <p>2000 PKR / kg</p>
+      <button onclick="addToCart('Fresh Apples', 2000)">Add to Cart</button>
+    </div>
+
+    <!-- Milk -->
+    <div class="product-card">
+      <a href="product.html#milk">
+        <img src="Buy Organic_ Milk.jpg" alt="Milk">
+      </a>
+      <h3 class="product-name">Milk</h3>
+      <p>250 PKR</p>
+      <button onclick="addToCart('Milk', 250)">Add to Cart</button>
+    </div>
+
+    <!-- Bread -->
+    <div class="product-card">
+      <a href="product.html#bread">
+        <img src="cesta de pão francês padaria comida.jpg" alt="Bread">
+      </a>
+      <h3 class="product-name">Bread</h3>
+      <p>150 PKR</p>
+      <button onclick="addToCart('Bread', 150)">Add to Cart</button>
+    </div>
+
+    <!-- Eggs -->
+    <div class="product-card">
+      <a href="product.html#eggs">
+        <img src="Learn how to make hard boiled eggs on the stove….jpg" alt="Eggs">
+      </a>
+      <h3 class="product-name">Eggs</h3>
+      <p>400 PKR / dozen</p>
+      <button onclick="addToCart('Eggs', 400)">Add to Cart</button>
+    </div>
+
+    <!-- Rice -->
+    <div class="product-card">
+      <a href="product.html#rice">
+        <img src="Os Maiores Produtores de Arroz do Brasil….jpg" alt="Rice">
+      <h3 class="product-name">Rice</h3>
+      <p>300 PKR / kg</p>
+      <button onclick="addToCart('Rice', 300)">Add to Cart</button>
+    </div>
+
+    <!-- Sugar -->
+    <div class="product-card">
+      <a href="product.html#sugar">
+        <img src="24-20 Oz Sugar, CanistersPacked in convenient….jpg" alt="Sugar">
+      </a>
+      <h3 class="product-name">Sugar</h3>
+      <p>180 PKR / kg</p>
+      <button onclick="addToCart('Sugar', 180)">Add to Cart</button>
+    </div>
+
+    <!-- Tea -->
+    <div class="product-card">
+      <a href="product.html#tea">
+        <img src="Enjoy the perfect cup of tea with the convenience….jpg" alt="Tea">
+      </a>
+      <h3 class="product-name">Tea</h3>
+      <p>900 PKR</p>
+      <button onclick="addToCart('Tea', 900)">Add to Cart</button>
+    </div>
+
+    <!-- Cooking Oil -->
+    <div class="product-card">
+      <a href="product.html#oil">
+        <img src="How-to Make Infused Olive Oil.jpg" alt="Oil">
+      </a>
+      <h3 class="product-name">Cooking Oil</h3>
+      <p>1200 PKR</p>
+      <button onclick="addToCart('Cooking Oil', 1200)">Add to Cart</button>
+    </div>
+
+    <!-- Chicken -->
+    <div class="product-card">
+      <a href="product.html#chicken">
+        <img src="Roasted Half Chicken (Crispy, Juicy Recipe)….jpg" alt="Chicken">
+      </a>
+      <h3 class="product-name">Chicken</h3>
+      <p>700 PKR / kg</p>
+      <button onclick="addToCart('Chicken', 700)">Add to Cart</button>
+    </div>
+
+    <!-- Potatoes -->
+    <div class="product-card">
+      <a href="product.html#potato">
+        <img src="Potatoes.jpg" alt="Potatoes">
+      </a>
+      <h3 class="product-name">Potatoes</h3>
+      <p>100 PKR / kg</p>
+      <button onclick="addToCart('Potatoes', 100)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

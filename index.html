@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Shopping Mart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div id="toast"></div>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <a onclick="logout()" class="logout-icon" title="Logout">
+  <i class="fa-solid fa-right-from-bracket"></i>
+</a>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">🛒 MiniMart</div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+    </div>
+
+    <a href="cart.html" class="cart">
+    🛍 Cart (<span id="cart-count">0</span>)
+</a>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
+    <a href="#deals"><i class="fa-solid fa-tags"></i> Deals</a>
+    <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Fresh Groceries Delivered</h1>
+    <p>Daily essentials at your doorstep</p>
+    
+    
+</section>
+
+
+<br>
+
+<!-- ABOUT INTRO SECTION -->
+<section id="about" class="about-intro">
+    <h2>  About us </h2>
+
+    <br>
+    <p>
+       Mini Shopping Mart is a modern web-based platform designed to provide users with a smooth and efficient online shopping experience. The application focuses on usability, responsive design, and interactive features.
+    </p>
+</section>
+<div class="features">
+
+  <div class="feature-box">
+    🚚
+    <h3>Fast Delivery</h3>
+    <p>Get your products delivered quickly to your doorstep.</p>
+  </div>
+
+  <div class="feature-box">
+    💳
+    <h3>Secure Payment</h3>
+    <p>Safe and secure payment options for all users.</p>
+  </div>
+
+  <div class="feature-box">
+    ⭐
+    <h3>Quality Products</h3>
+    <p>We provide only high-quality and trusted items.</p>
+  </div>
+
+  <div class="feature-box">
+    🔄
+    <h3>Easy Returns</h3>
+    <p>Hassle-free return and refund policy.</p>
+  </div>
+
+</div>
+
+<!-- CATEGORIES -->
+<section class="categories">
+    <h2>Categories</h2>
+    <div class="category-container">
+         <a href="home.html" class="category-card">🏠 Home</a>
+<a href="personalcare.html" class="category-card">🧴 Personal Care</a>
+<a href="groceries.html" class="category-card">🛍️ Groceries</a>
+<a href="clothing.html" class="category-card">👕 Clothing</a>
+         
+       
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="deals" class="products">
+    <h2>Products</h2>
+
+    <div class="product-grid">
+
+        <!-- APPLES -->
+        <div class="product-card">
+            <a href="product.html#apples">
+                <img src="fresh-apple-wooden-box-black-fresh-fruit.jpg" alt="Apples">
+            </a>
+            <h3 class="product-name">Fresh Apples</h3>
+            <p>2000 PKR / kg</p>
+            <button onclick="addToCart('Fresh Apples', 2000)">Add to Cart</button>
+        </div>
+
+        <!-- JUICE -->
+        <div class="product-card">
+            <a href="product.html#juice">
+                <img src="binhnguyen269-food-5072245_1920.jpg" alt="Juice">
+            </a>
+            <h3 class="product-name">Fruit Juice</h3>
+            <p>1500 PKR</p>
+            <button onclick="addToCart('Fruit Juice', 1500)">Add to Cart</button>
+        </div>
+
+        <!-- T-SHIRT -->
+        <div class="product-card">
+            <a href="product.html#tshirt">
+                <img src="t-shirtbedrucken-t-shirt-9611374_1920.jpg" alt="T-shirt">
+            </a>
+            <h3 class="product-name">T-Shirt</h3>
+            <p>5000 PKR</p>
+            <button onclick="addToCart('T-Shirt', 5000)">Add to Cart</button>
+        </div>
+
+        <!-- DETERGENT -->
+        <div class="product-card">
+            <a href="product.html#detergent">
+                <img src="ideativas-tlm-washing-machine-8175768_1920.png" alt="Detergent">
+            </a>
+            <h3 class="product-name">Detergent</h3>
+            <p>3000 PKR</p>
+            <button onclick="addToCart('Detergent', 3000)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p class="contact-intro">
+        Have questions or feedback? We'd love to hear from you.
+        Reach out to Mini Shopping Mart using the details below
+        or send us a message through the form.
+    </p>
+
+    <!-- CONTACT DETAILS -->
+    <div class="contact-details">
+        <p><strong>Email:</strong> info@minimart.com</p>
+        <p><strong>Phone:</strong> +92 300 1234567</p>
+        <p><strong>Address:</strong> Shahodi Garhi, Pakistan</p>
+        <p><strong>Business Hours:</strong> Mon – Sat (9:00 AM – 10:00 PM)</p>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Mini Shopping Mart</p>
+</footer>
+
+</body>
+</html>

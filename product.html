@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details - MiniMart</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">🛒 MiniMart</div>
+     <div id="toast"></div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+    </div>
+
+    <div class="cart">
+        🛍 Cart
+    </div>
+</header>
+<div style="padding: 10px 20px;">
+  <button onclick="goBack()" class="back-btn">← Back</button>
+</div>
+
+<!-- PRODUCT DETAILS -->
+<section class="product-details" id="apples">
+
+    <div class="product-image">
+        <img src="fresh-apple-wooden-box-black-fresh-fruit.jpg" alt="Apples">
+    </div>
+
+    <div class="product-info">
+        <h1>Fresh  Apples</h1>
+        <p class="price">2000 pkr / kg</p>
+
+        <div class="rating">
+            ⭐⭐⭐⭐☆ (4.2)
+        </div>
+
+        <p class="description">
+            Fresh and juicy red apples directly from the farm.
+            Rich in vitamins and perfect for a healthy lifestyle.
+        </p>
+
+        <input type="number" id="qty-apples" value="1" min="1">
+<button onclick="addToCartWithQty('Fresh Apples', 2000, 'qty-apples')">
+  Add to Cart
+</button>
+
+    
+    </div>
+
+</section>
+<section class="product-details" id="juice">
+
+    <div class="product-image">
+        <img src="binhnguyen269-food-5072245_1920.jpg" alt="Juice">
+    </div>
+
+    <div class="product-info">
+        <h1>Fresh Fruit Juice</h1>
+        <p class="price">1500 pkr</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.1)</div>
+        <p class="description">
+            Refreshing fruit juice made with natural ingredients.
+        </p>
+
+        <input type="number" id="qty-juice" value="1" min="1">
+<button onclick="addToCartWithQty('Fruit Juice', 1500, 'qty-juice')">
+  Add to Cart
+</button>
+
+      
+  
+    </div>
+</section>
+
+<hr>
+
+<!-- ================= T-SHIRT ================= -->
+<section class="product-details" id="tshirt">
+
+    <div class="product-image">
+        <img src="t-shirtbedrucken-t-shirt-9611374_1920.jpg" alt="T-Shirt">
+    </div>
+
+    <div class="product-info">
+        <h1>Men's Casual T-Shirt</h1>
+        <p class="price">5000 pkr</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (4.6)</div>
+        <p class="description">
+            Comfortable cotton t-shirt for daily casual wear.
+        </p>
+
+       <input type="number" id="qty-tshirt" value="1" min="1">
+<button onclick="addToCartWithQty('T-Shirt', 5000, 'qty-tshirt')">
+  Add to Cart
+</button>
+      
+    </div>
+</section>
+
+<hr>
+
+<!-- ================= DETERGENT ================= -->
+<section class="product-details" id="detergent">
+
+    <div class="product-image">
+        <img src="ideativas-tlm-washing-machine-8175768_1920.png" alt="Detergent">
+    </div>
+
+    <div class="product-info">
+        <h1>Laundry Detergent</h1>
+        <p class="price">3000 pkr</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.3)</div>
+        <p class="description">
+            Strong detergent that removes tough stains easily.
+        </p>
+
+       <input type="number" id="qty-detergent" value="1" min="1">
+<button onclick="addToCartWithQty('Laundry Detergent', 3000, 'qty-detergent')">
+  Add to Cart
+</button>
+
+       
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Mini Shopping Mart</p>
+</footer>
+
+</body>
+</html>
+<script src="script.js"></script>
+</body>
+</html>
